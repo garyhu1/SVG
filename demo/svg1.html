@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>svg</title>
+		<style>
+			img {
+				-webkit-clip-path: url(#mask);
+				clip-path: url(#mask);
+				height: 200px;
+			}
+			
+			body {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<img src="https://hacks.mozilla.org/files/2017/06/omega.jpg" alt="Omega nebula" height="200">
+
+		<svg width="0" height="0">
+			<defs>
+				<clipPath id="mask">
+					<path d="M 40 0 L 0 40, 60 100, 0 160, 40 200, 100 140, 160 200, 200 160, 140 100, 200 40, 160 0, 100 60">
+				</clipPath>
+			</defs>
+		</svg>
+	</body>
+
+</html>

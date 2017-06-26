@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>横向移动</title>
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+			
+			img {
+				height: 600px;
+				display: block;
+				-webkit-clip-path: url(#mask);
+				clip-path: url(#mask);
+			}
+		</style>
+	</head>
+
+	<body>
+		<img src="https://hacks.mozilla.org/files/2017/06/omega_large.jpg">
+
+		<svg version="1.2" width="0" height="0" viewBox="0 0 740 600">
+			<defs>
+				<clipPath id="mask">
+					<rect x="0" y="0" width="200" height="600">
+						<animate attributeType="XML" attributeName="x" from="-200" to="740" dur="10s" repeatCount="indefinite" />
+					</rect>
+				</clipPath>
+			</defs>
+		</svg>
+	</body>
+
+</html>

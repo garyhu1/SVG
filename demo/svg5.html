@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.circle {
+				animation: 2s infinite alternate circle;
+			}
+			
+			@keyframes circle {
+				from {
+					-webkit-clip-path: circle(0%);
+					clip-path: circle(0%);
+				}
+				to {
+					-webkit-clip-path: circle(120px);
+					clip-path: circle(120px);
+				}
+			}
+			
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 90vh;
+				box-sizing: border-box;
+			}
+			
+			body>* {
+				display: block;
+				flex: 0 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<img src="https://hacks.mozilla.org/files/2017/06/firefox-logo.png" height="200" class="circle">
+	</body>
+
+</html>
